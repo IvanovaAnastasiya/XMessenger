@@ -1,6 +1,6 @@
 ﻿namespace ClientAPI.Authorization
 {
-    public class VkLoginProvider:IAuthorizationProvider
+    public sealed class VkLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()
         {

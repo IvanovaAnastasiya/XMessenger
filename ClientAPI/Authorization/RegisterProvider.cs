@@ -1,6 +1,6 @@
 ﻿namespace ClientAPI.Authorization
 {
-    public class RegisterProvider:IAuthorizationProvider
+    public sealed class RegisterProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()
         {

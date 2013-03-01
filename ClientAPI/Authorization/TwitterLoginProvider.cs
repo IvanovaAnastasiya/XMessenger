@@ -1,6 +1,6 @@
 ﻿namespace ClientAPI.Authorization
 {
-    public class TwitterLoginProvider:IAuthorizationProvider
+    public sealed class TwitterLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()
         {

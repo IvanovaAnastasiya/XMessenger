@@ -1,6 +1,6 @@
 ﻿namespace ClientAPI.Authorization
 {
-    public class FacebookLoginProvider:IAuthorizationProvider
+    public sealed class FacebookLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()
         {

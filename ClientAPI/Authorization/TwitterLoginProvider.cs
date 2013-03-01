@@ -1,5 +1,8 @@
 ﻿namespace ClientAPI.Authorization
 {
+    /// <summary>
+    /// Представляет методы для авторизации через Twitter
+    /// </summary>
     public sealed class TwitterLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()

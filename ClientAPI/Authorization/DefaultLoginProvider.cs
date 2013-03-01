@@ -1,5 +1,8 @@
 ﻿namespace ClientAPI.Authorization
 {
+    /// <summary>
+    /// Представляет методы для авторизации по умолчанию
+    /// </summary>
     public sealed class DefaultLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()

@@ -1,5 +1,8 @@
 ﻿namespace ClientAPI.Authorization
 {
+    /// <summary>
+    /// Представляет методы для авторизации через Facebook
+    /// </summary>
     public sealed class FacebookLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()

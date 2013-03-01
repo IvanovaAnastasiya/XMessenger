@@ -1,5 +1,8 @@
 ﻿namespace ClientAPI.Authorization
 {
+    /// <summary>
+    /// Представляет методы для регистрации пользователя
+    /// </summary>
     public sealed class RegisterProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()

@@ -1,5 +1,8 @@
 ﻿namespace ClientAPI.Authorization
 {
+    /// <summary>
+    /// Представляет методы для авторизации через ВКонтакте
+    /// </summary>
     public sealed class VkLoginProvider:IAuthorizationProvider
     {
         public AuthorizationResult Authorise()

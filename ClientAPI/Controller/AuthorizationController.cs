@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 using ClientAPI.Authorization;
 using ClientAPI.View;
 
@@ -34,6 +35,27 @@ namespace ClientAPI.Controller
             }
             provider = new DefaultLoginProvider();
             return provider.Authorise();
+        }
+
+        public void SetProvider(Provider loginProvider)
+        {
+            switch (loginProvider)
+            {
+                case Provider.Default:
+                    provider = new DefaultLoginProvider();
+                    break;
+                case Provider.Facebook:
+                    provider = new FacebookLoginProvider();
+                    break;
+                case Provider.Twitter:
+                    provider = new TwitterLoginProvider();
+                    break;
+                case Provider.VKontakte:
+                    provider = new VkLoginProvider();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("Invalid login provider");
+            }
         }
 
         /// <summary>
